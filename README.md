@@ -6,7 +6,7 @@
 
 Un keylogger avanzado escrito en PowerShell que se ejecuta de forma completamente **stealth** mediante Rubber Ducky o manualmente con un archivo batch.
 
-> ⚠️ **Advertencia**: este material es una transformación del contenido que has proporcionado. Úsalo solo en entornos controlados y con autorización expresa.
+> ⚠️ **Advertencia**: este proyecto es estrictamente para fines educativos y de investigación en seguridad. El uso de este software en sistemas sin autorización explícita es ilegal y no ético. No me hago responsable del mal uso de esta herramienta..
 
 ---
 
