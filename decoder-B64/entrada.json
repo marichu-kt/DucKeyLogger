@@ -1,0 +1,337 @@
+{
+  "name": "DucKeyLogger",
+  "type": "bot_chat",
+  "id": 9353133729,
+  "messages": [
+    {
+      "id": 5200,
+      "type": "message",
+      "date": "2025-11-18T16:57:46",
+      "date_unixtime": "1763481466",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC/3MpTfZOrfTJT09PLVJwdA7xDHN08VfQVTA01De00DcyMDJVMDSzMjW3MjEDAGJeZWkrAAAA",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC/3MpTfZOrfTJT09PLVJwdA7xDHN08VfQVTA01De00DcyMDJVMDSzMjW3MjEDAGJeZWkrAAAA"
+        }
+      ]
+    },
+    {
+      "id": 5201,
+      "type": "message",
+      "date": "2025-11-18T16:57:48",
+      "date_unixtime": "1763481468",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC/3N29HXy9FdwcVVwDPDxdHZ09jw82c9Kwb+0JCc/P1tBV8EpMS8lNStRISVVITWvpCgxJVFB107BKSc/GSSUl1+SWAxUBab1SipKANQdSUdQAAAA",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC/3N29HXy9FdwcVVwDPDxdHZ09jw82c9Kwb+0JCc/P1tBV8EpMS8lNStRISVVITWvpCgxJVFB107BKSc/GSSUl1+SWAxUBab1SipKANQdSUdQAAAA"
+        }
+      ]
+    },
+    {
+      "id": 5202,
+      "type": "message",
+      "date": "2025-11-18T16:57:50",
+      "date_unixtime": "1763481470",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC//MLdQ1zVAhz9Qtx9HO0UnDKyU9WSElVyMsvSSxW0IXQeiUVJchsAGu7bpw0AAAA",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC//MLdQ1zVAhz9Qtx9HO0UnDKyU9WSElVyMsvSSxW0IXQeiUVJchsAGu7bpw0AAAA"
+        }
+      ]
+    },
+    {
+      "id": 5203,
+      "type": "message",
+      "date": "2025-11-18T16:57:53",
+      "date_unixtime": "1763481473",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC/4sOC1Zwzk9JjVVILU4uykzKTM1LybdSUMpNzStOzEq1UihKLcssTlRIzVHITczM0VEoyC9KS1SKdvULcQ2KBQCPZDIAPgAAAA==",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC/4sOC1Zwzk9JjVVILU4uykzKTM1LybdSUMpNzStOzEq1UihKLcssTlRIzVHITczM0VEoyC9KS1SKdvULcQ2KBQCPZDIAPgAAAA=="
+        }
+      ]
+    },
+    {
+      "id": 5204,
+      "type": "message",
+      "date": "2025-11-18T16:57:56",
+      "date_unixtime": "1763481476",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC/3N29HXy9FdwcVVwDPDxdHZ09jw82c9KwT2zxKM0SUFXIaA0J0chKLWwNLW4pFhB104hLLO4NDFHIbikNCUzX8E5PyUVAEjkT6lDAAAA",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC/3N29HXy9FdwcVVwDPDxdHZ09jw82c9KwT2zxKM0SUFXIaA0J0chKLWwNLW4pFhB104hLLO4NDFHIbikNCUzX8E5PyUVAEjkT6lDAAAA"
+        }
+      ]
+    },
+    {
+      "id": 5205,
+      "type": "message",
+      "date": "2025-11-18T16:57:58",
+      "date_unixtime": "1763481478",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC//MLdQ1zVAhz9Qtx9HO0UgjLLC5NzFEILilNycxXcM5PSVXQVXBNSU8FAC09j1coAAAA",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC//MLdQ1zVAhz9Qtx9HO0UgjLLC5NzFEILilNycxXcM5PSVXQVXBNSU8FAC09j1coAAAA"
+        }
+      ]
+    },
+    {
+      "id": 5206,
+      "type": "message",
+      "date": "2025-11-18T16:58:02",
+      "date_unixtime": "1763481482",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC//MLdQ1zVAhz9Qtx9HO0UvDJT8/MU9BVyC8tycnPz9ZLzs8F8pyKEstSARhxgekqAAAA",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC//MLdQ1zVAhz9Qtx9HO0UvDJT8/MU9BVyC8tycnPz9ZLzs8F8pyKEstSARhxgekqAAAA"
+        }
+      ]
+    },
+    {
+      "id": 5207,
+      "type": "message",
+      "date": "2025-11-18T16:58:05",
+      "date_unixtime": "1763481485",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC/4vOTczM0Ssoyi/Jz9PLTVXQVXAqSixLjVUoLU4tykvMTbVSyE0sykzOKAUqyixLLEl1gCsGALUBCGo8AAAA",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC/4vOTczM0Ssoyi/Jz9PLTVXQVXAqSixLjVUoLU4tykvMTbVSyE0sykzOKAUqyixLLEl1gCsGALUBCGo8AAAA"
+        }
+      ]
+    },
+    {
+      "id": 5208,
+      "type": "message",
+      "date": "2025-11-18T16:58:07",
+      "date_unixtime": "1763481487",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC/4vOTczM0Ssoyi/Jz9PLTVXQVXAqSixLjVUoSCwuLs8vSrFSCEhUUSk3KErRjYiMAgBzEE7sLwAAAA==",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC/4vOTczM0Ssoyi/Jz9PLTVXQVXAqSixLjVUoSCwuLs8vSrFSCEhUUSk3KErRjYiMAgBzEE7sLwAAAA=="
+        }
+      ]
+    },
+    {
+      "id": 5209,
+      "type": "message",
+      "date": "2025-11-18T16:58:09",
+      "date_unixtime": "1763481489",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC/4vOTczM0Ssoyi/Jz9PLTVXQVXAqSixLjVXwzMtMzkwsUihOLc48vDlPIdrZx9PZOxYAEMUvKjAAAAA=",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC/4vOTczM0Ssoyi/Jz9PLTVXQVXAqSixLjVXwzMtMzkwsUihOLc48vDlPIdrZx9PZOxYAEMUvKjAAAAA="
+        }
+      ]
+    },
+    {
+      "id": 5210,
+      "type": "message",
+      "date": "2025-11-18T16:58:12",
+      "date_unixtime": "1763481492",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC//Pxd/f0s1LITczM0Ssoyi/Jz9PLTVWoUSgtLk0sysy3zQWSyRmlQLnMssSSVAdkNUWpxaU5JYkp+bbFpcnJqcXFAISz0VVNAAAA",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC//Pxd/f0s1LITczM0Ssoyi/Jz9PLTVWoUSgtLk0sysy3zQWSyRmlQLnMssSSVAdkNUWpxaU5JYkp+bbFpcnJqcXFAISz0VVNAAAA"
+        }
+      ]
+    },
+    {
+      "id": 5211,
+      "type": "message",
+      "date": "2025-11-18T16:58:16",
+      "date_unixtime": "1763481496",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC//MLdQ1zVAhz9Qtx9HO0UvDJT8/MU9BVSM8syShN0kvOzwVynDOK8nNTAdZ96+EqAAAA",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC//MLdQ1zVAhz9Qtx9HO0UvDJT8/MU9BVSM8syShN0kvOzwVynDOK8nNTAdZ96+EqAAAA"
+        }
+      ]
+    },
+    {
+      "id": 5212,
+      "type": "message",
+      "date": "2025-11-18T16:58:18",
+      "date_unixtime": "1763481498",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC/4tOzyzJKE3SS87PVdBVcM4oys9NjVUoLU4tykvMTbVSyE0sykzOKHVIz03MzAGpAgB/77ObMQAAAA==",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC/4tOzyzJKE3SS87PVdBVcM4oys9NjVUoLU4tykvMTbVSyE0sykzOKHVIz03MzAGpAgB/77ObMQAAAA=="
+        }
+      ]
+    },
+    {
+      "id": 5213,
+      "type": "message",
+      "date": "2025-11-18T16:58:20",
+      "date_unixtime": "1763481500",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC/4tOzyzJKE3SS87PVdBVcM4oys9NjVUoSCwuLs8vSrFSCDZOLy1KVDQyMDIFAKNM3HUrAAAA",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC/4tOzyzJKE3SS87PVdBVcM4oys9NjVUoSCwuLs8vSrFSCDZOLy1KVDQyMDIFAKNM3HUrAAAA"
+        }
+      ]
+    },
+    {
+      "id": 5214,
+      "type": "message",
+      "date": "2025-11-18T16:58:22",
+      "date_unixtime": "1763481502",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC/4tOzyzJKE3SS87PVdBVcM4oys9NjVXwzMtMzkwsUihOLc48vDlPIdrZx9PZOxYAZZYhKC0AAAA=",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC/4tOzyzJKE3SS87PVdBVcM4oys9NjVXwzMtMzkwsUihOLc48vDlPIdrZx9PZOxYAZZYhKC0AAAA="
+        }
+      ]
+    },
+    {
+      "id": 5215,
+      "type": "message",
+      "date": "2025-11-18T16:58:25",
+      "date_unixtime": "1763481505",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC//Pxd/f0s1JIzyzJKE3SS87PVahRKC0uTSzKzLfNBZLJGaUO6bmJmTlQuaLU4tKcksSUfNvi0uTk1OJiAA3DskdBAAAA",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC//Pxd/f0s1JIzyzJKE3SS87PVahRKC0uTSzKzLfNBZLJGaUO6bmJmTlQuaLU4tKcksSUfNvi0uTk1OJiAA3DskdBAAAA"
+        }
+      ]
+    },
+    {
+      "id": 5216,
+      "type": "message",
+      "date": "2025-11-18T16:58:29",
+      "date_unixtime": "1763481509",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC/3N29HXy9FdwcVVwDPDxdHZ09jw82c9KISyzuDQxRyG4pDQlM1/BOT8lVUHXTsG1oiAnvygxJb9IASiQWJSckVmWXwwA2meQfEMAAAA=",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC/3N29HXy9FdwcVVwDPDxdHZ09jw82c9KISyzuDQxRyG4pDQlM1/BOT8lVUHXTsG1oiAnvygxJb9IASiQWJSckVmWXwwA2meQfEMAAAA="
+        }
+      ]
+    },
+    {
+      "id": 5217,
+      "type": "message",
+      "date": "2025-11-18T16:58:32",
+      "date_unixtime": "1763481512",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC//MLdQ1zVAhz9Qtx9HO0UnCtKMjJL0pMyS9SSElVSCxKzsgsyy9W0FVwTUlPBQDHmABTLAAAAA==",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC//MLdQ1zVAhz9Qtx9HO0UnCtKMjJL0pMyS9SSElVSCxKzsgsyy9W0FVwTUlPBQDHmABTLAAAAA=="
+        }
+      ]
+    },
+    {
+      "id": 5218,
+      "type": "message",
+      "date": "2025-11-18T16:58:34",
+      "date_unixtime": "1763481514",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC//MLdQ1zVAhz9Qtx9HO0UvArTS1LVChILS5JPLwxUUFXwTUlPRUAawFeyCQAAAA=",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC//MLdQ1zVAhz9Qtx9HO0UvArTS1LVChILS5JPLwxUUFXwTUlPRUAawFeyCQAAAA="
+        }
+      ]
+    },
+    {
+      "id": 5219,
+      "type": "message",
+      "date": "2025-11-18T16:58:37",
+      "date_unixtime": "1763481517",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC/4t2KU3OBmH3fAVdBdeU9NRYhZLSkvyizMQchaLU5NSSRAUgryQzJydRISVVoSCxBAgVol39QlyDYgFLpstOPgAAAA==",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC/4t2KU3OBmH3fAVdBdeU9NRYhZLSkvyizMQchaLU5NSSRAUgryQzJydRISVVoSCxBAgVol39QlyDYgFLpstOPgAAAA=="
+        }
+      ]
+    },
+    {
+      "id": 5220,
+      "type": "message",
+      "date": "2025-11-18T16:58:40",
+      "date_unixtime": "1763481520",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC//MLdQ1zVAhz9Qtx9HO0UigpLckvykzMUShKTU4tSVQA8koyc3ISFVJSFQoSS4BQQVfBqbQ4ObFIITk/T8GlNDkbhN3zgeKuKempAAhIcxNQAAAA",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC//MLdQ1zVAhz9Qtx9HO0UigpLckvykzMUShKTU4tSVQA8koyc3ISFVJSFQoSS4BQQVfBqbQ4ObFIITk/T8GlNDkbhN3zgeKuKempAAhIcxNQAAAA"
+        }
+      ]
+    },
+    {
+      "id": 5221,
+      "type": "message",
+      "date": "2025-11-18T16:58:44",
+      "date_unixtime": "1763481524",
+      "from": "DucKeyLogger",
+      "from_id": "user9353133729",
+      "text": "H4sIAMWaHGkC//MLdQ1zVAhz9Qtx9HO0UvDJT8/MU9BVSM8syShN0kvOzwVyXFPSUwF96IKuKAAAAA==",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "H4sIAMWaHGkC//MLdQ1zVAhz9Qtx9HO0UvDJT8/MU9BVSM8syShN0kvOzwVyXFPSUwF96IKuKAAAAA=="
+        }
+      ]
+    }
+  ]
+}
