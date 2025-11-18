@@ -10,6 +10,34 @@ Un keylogger avanzado escrito en PowerShell que se ejecuta de forma completament
 
 ---
 
+## 📸 Guía visual
+
+![DucKeyLogger – logo del canal](images/DucKeyLogger.png)
+
+*DucKeyLogger.png — logo del canal de Telegram DucKeyLogger.*
+
+![Mensaje de inicio de Telegram](images/DucKeyLogger-1.jpg)
+
+*DucKeyLogger-1.jpg — mensaje de inicio de Telegram.*
+
+![Ejemplos del chat con logs censurados](images/DucKeyLogger-2.jpg)
+
+*DucKeyLogger-2.jpg — ejemplos del chat con los logs del keylogger (censurados por privacidad).*
+
+![Exportar JSON — paso 1](images/TelegramDesktop-1.png)
+
+*TelegramDesktop-1.png — primer paso para exportar el JSON del chat de Telegram.*
+
+![Exportar JSON — paso 2](images/TelegramDesktop-2.png)
+
+*TelegramDesktop-2.png — segundo paso: seleccionamos la opción de exportar como JSON.*
+
+![Exportación completada](images/TelegramDesktop-3.png)
+
+*TelegramDesktop-3.png — mensaje de éxito de exportación.*
+
+---
+
 ## ⚡ Características Principales
 
 - 🕵️ **Stealth Total**: Ejecución en background sin ventanas visibles.
