@@ -1,9 +1,54 @@
-# DuckKeyLogger — Guía visual
+# DucKeyLogger — Herramienta Educativa de Ciberseguridad
 
-A continuación se muestran las capturas en el orden solicitado. Se ha retirado el logo.
+> **Aviso**: Este proyecto está diseñado **exclusivamente** para fines educativos y de concienciación en ciberseguridad, en **entornos controlados** y con **permiso explícito** de todas las partes. **No** está pensado para uso malicioso ni para monitorizar sistemas ajenos.
 
-## Interacción en Telegram
+## 🧭 Descripción del proyecto
+**DucKeyLogger** es un proyecto didáctico que muestra **riesgos** y **vectores de ataque** asociados a la captura de pulsaciones y a la **exfiltración de datos** hacia un canal de mensajería (por ejemplo, un bot de Telegram). El objetivo es **aprender a detectar**, **mitigar** y **auditar** este tipo de amenazas.
 
+El repositorio incluye materiales y guía visual para **demostrar** (de forma controlada) cómo podrían aparecer registros de eventos en un canal de Telegram, así como el **proceso de exportación** de dichos mensajes para su análisis forense.
+
+## 🎯 Objetivos educativos
+- Concienciar sobre los riesgos de registrar entradas de teclado y su envío a terceros.
+- Explicar un **flujo de trabajo de auditoría**: desde la aparición de mensajes en Telegram hasta su **exportación** a **JSON** para su análisis.
+- Reforzar **buenas prácticas defensivas** y controles de seguridad.
+
+## ⚖️ Uso responsable / Legal
+- Utilízalo solo en equipos de laboratorio o con autorización formal.
+- Evita recopilar datos reales o sensibles; emplea **datos simulados** para las prácticas.
+- Respeta la normativa local (RGPD/Ley Orgánica de Protección de Datos u otras que apliquen).
+
+## 🧩 Arquitectura (alto nivel)
+1. Equipo de pruebas genera **eventos de ejemplo** (no sensibles).
+2. Los eventos se envían a un **canal/bot de Telegram** para su demostración didáctica.
+3. Desde **Telegram Desktop** se realiza la **exportación a JSON** de la conversación.
+4. Se analiza el JSON exportado con herramientas forenses/DFIR en un entorno controlado.
+
+> Este repositorio **no** proporciona código operativo para capturar entradas ni instrucciones para su despliegue encubierto. La finalidad es **mostrar y analizar** evidencias en un entorno de laboratorio.
+
+## 🔧 Requisitos mínimos (entorno de laboratorio)
+- Cuenta de Telegram y un bot creado con **@BotFather** (para pruebas controladas).
+- **Telegram Desktop** para exportar el chat.
+- Herramientas de análisis (por ejemplo, Python/Excel/ETL) para tratar el JSON exportado.
+
+## ▶️ Puesta en marcha (solo demostración)
+1. Crea un **bot de Telegram** y obtén su **token** (no lo compartas).
+2. Crea un **chat privado** con el bot o añade el bot a un grupo **de laboratorio**.
+3. Envía **mensajes de ejemplo** al bot (texto simulado) para generar material de práctica.
+4. Sigue los pasos de exportación (sección siguiente) y analiza el **JSON** en frío.
+
+> Sugerencia didáctica: genera mensajes con cadenas **simuladas** (no reales) para probar búsquedas, filtros y detección de patrones durante el análisis.
+
+## 🗂️ Exportar el chat a JSON (Telegram Desktop)
+1. Abre Telegram Desktop y entra en el chat del bot o grupo de laboratorio.
+2. Abre el menú **⋯** → **Export chat history** / **Exportar historial del chat**.
+3. Elige **Machine‑readable JSON** como formato de exportación.
+4. Confirma y espera el mensaje de **éxito**. Obtendrás un archivo `.json` para su análisis.
+
+Las capturas siguientes ilustran el proceso.
+
+## 📸 Guía visual
+
+### Interacción en Telegram (dos imágenes en una sola fila)
 <!-- Dos imágenes en la misma fila -->
 <table>
   <tr>
@@ -18,8 +63,7 @@ A continuación se muestran las capturas en el orden solicitado. Se ha retirado 
   </tr>
 </table>
 
-## Exportación del chat a JSON (Telegram Desktop)
-
+### Exportación del chat a JSON (tres imágenes en la misma fila)
 <!-- Tres imágenes en la misma fila -->
 <table>
   <tr>
@@ -37,3 +81,12 @@ A continuación se muestran las capturas en el orden solicitado. Se ha retirado 
     </td>
   </tr>
 </table>
+
+## 🛡️ Buenas prácticas y mitigación
+- Minimiza privilegios, aplica **EDR/antivirus** y listas de permitidos.
+- Emplea **protecciones de entrada**, bloqueo de macros, políticas de ejecución y **control de dispositivos**.
+- Monitoriza **telemetría** y **IOC** asociados a exfiltración por mensajería.
+- Formación y **concienciación** del usuario final.
+
+## 📜 Licencia
+Uso educativo. Verifica restricciones legales de tu país/organización antes de usar cualquier material de este repositorio.
