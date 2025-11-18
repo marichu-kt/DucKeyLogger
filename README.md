@@ -82,6 +82,61 @@ Las capturas siguientes ilustran el proceso.
   </tr>
 </table>
 
+
+## 🔎 Ejemplo: decodificar con el traductor (`decoder-B64`)
+
+En la misma carpeta que este `README.md` hay un directorio llamado `decoder-B64/` con un traductor/decodificador en Python para procesar el JSON exportado de Telegram y producir un texto legible.
+
+**Estructura esperada:**
+```
+.
+├─ README.md
+└─ decoder-B64/
+   ├─ decoder.py
+   ├─ entrada.json     # exportación de Telegram (Machine-readable JSON)
+   └─ salida.txt       # se genera tras ejecutar el script
+```
+
+**Pasos:**  
+1) Exporta la conversación desde **Telegram Desktop** en formato **Machine-readable JSON** (ver sección de capturas).  
+2) Copia el archivo exportado como `decoder-B64/entrada.json`.  
+3) Ejecuta el traductor para generar `decoder-B64/salida.txt`.
+
+**Comandos de ejemplo:**
+
+Windows (PowerShell):
+```powershell
+cd decoder-B64
+python .\decoder.py -i .\entrada.json -o .\salida.txt
+```
+
+Windows (CMD):
+```
+cd decoder-B64
+python decoder.py -i entrada.json -o salida.txt
+```
+
+Linux / macOS:
+```bash
+cd decoder-B64
+python3 decoder.py -i entrada.json -o salida.txt
+```
+
+> Si tu `decoder.py` admite entrada/salida por **STDIN/STDOUT**, también puedes usar:
+```bash
+cd decoder-B64
+python3 decoder.py entrada.json > salida.txt
+```
+
+**Resultado esperado (`salida.txt`):**
+```
+[2025-03-18 15:59:01] bot/DucKeyLogger: Mensaje de inicio...
+[2025-03-18 16:02:45] bot/DucKeyLogger: Registro decodificado: <texto de ejemplo> ...
+...
+```
+Este fichero contiene los textos **ya decodificados** (por ejemplo, cadenas que venían en Base64 en el JSON). Empléalo únicamente con **datos simulados** y en **entornos controlados**.
+
+
 ## 🛡️ Buenas prácticas y mitigación
 - Minimiza privilegios, aplica **EDR/antivirus** y listas de permitidos.
 - Emplea **protecciones de entrada**, bloqueo de macros, políticas de ejecución y **control de dispositivos**.
