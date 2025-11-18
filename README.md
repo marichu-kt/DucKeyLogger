@@ -130,9 +130,28 @@ python3 decoder.py entrada.json > salida.txt
 
 **Resultado esperado (`salida.txt`):**
 ```
-[2025-03-18 15:59:01] bot/DucKeyLogger: Mensaje de inicio...
-[2025-03-18 16:02:45] bot/DucKeyLogger: Registro decodificado: <texto de ejemplo> ...
-...
+DucKeyLogger ACTIVADO - 11/18/2025 16:57:46
+CAMBIO DE APLICACIÓN: Outlook - Bandeja de entrada -> Bloc de notas - notas.txt
+NUEVA VENTANA: Bloc de notas - notas.txt - notas.txt
+[VS Code] escribiendo: "mensaje: revisa el mail, porfa"[ENTER]
+CAMBIO DE APLICACIÓN: GitHub - Pull Requests -> Visual Studio Code
+NUEVA VENTANA: Visual Studio Code - Edge
+NUEVA VENTANA: Login - outlook.com - Brave
+[mail.proton.me - Brave] username: marichu.private@proton.me
+[mail.proton.me - Brave] password: Pa$$w0rd-XYZ
+[mail.proton.me - Brave] Iniciar sesión [CLICK]
+LOGIN: mail.proton.me | usuario=marichu.private@proton.me | resultado=success
+NUEVA VENTANA: Login - github.com - Chrome
+[github.com - Chrome] username: marichu@gmail.com
+[github.com - Chrome] password: S3gura!2025
+[github.com - Chrome] Iniciar sesión [CLICK]
+LOGIN: github.com | usuario=marichu@gmail.com | resultado=success
+CAMBIO DE APLICACIÓN: Visual Studio Code -> Explorador de archivos
+NUEVA VENTANA: Explorador de archivos - Edge
+NUEVA VENTANA: Nueva pestaña - Edge
+[DuckDuckGo - Edge] tutorial receta tortilla de patata [ENTER]
+NUEVA VENTANA: tutorial receta tortilla de patata - Buscar con DuckDuckGo - Edge
+NUEVA VENTANA: Login - github.com - Edge
 ```
 Este fichero contiene los textos **ya decodificados** (por ejemplo, cadenas que venían en Base64 en el JSON). Empléalo únicamente con **datos simulados** y en **entornos controlados**.
 
