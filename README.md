@@ -85,14 +85,42 @@ DucKeyLogger/
 ├── 🦆 inject.bin               # Payload compilado para la SD del USB Rubber Ducky
 ├── 🛡️ keylogger.ps1            # PoC educativa de registro de pulsaciones (keylogger)
 ├── 📝 README.md                # Descripción y notas del proyecto
+├── 📜 LICENSE                  # Licenica de uso con sus terminos y condiciones del software
+├── 📂 images/
+│   ├── banner.png
+│   ├── DucKeyLogger-1.jpg
+│   ├── DucKeyLogger-2.jpg
+│   ├── TelegramDesktop-1.png
+│   ├── TelegramDesktop-2.png
+│   └── TelegramDesktop-3.png
 └── 📂 decoder-B64/             # Traductor de Base64 a texto humano legible
     ├── 🐍 decoder.py           # Script de decodificación Base64
     ├── 📥 entrada.json         # Archivo JSON al exportar el chat del Bot de telegram
     └── 📤 salida.txt           # Salida generada por el traductor (decoder.py) en lenguaje humano
 ```
+```
+flowchart TD
+    A[DucKeyLogger] --> B[🧩 Ducky Encoder.html]
+    A --> C[⚡ execute.bat]
+    A --> D[🦆 inject.bin]
+    A --> E[🛡️ keylogger.ps1]
+    A --> F[📝 README.md]
+    A --> G[📜 LICENSE]
+    A --> H[📂 images]
+    A --> I[📂 decoder-B64]
+    H --> H1[banner.png]
+    H --> H2[DucKeyLogger-1.jpg]
+    H --> H3[DucKeyLogger-2.jpg]
+    H --> H4[TelegramDesktop-1.png]
+    H --> H5[TelegramDesktop-2.png]
+    H --> H6[TelegramDesktop-3.png]
+    I --> I1[🐍 decoder.py]
+    I --> I2[📥 entrada.json]
+    I --> I3[📤 salida.txt]
 
 **Resultado ejemplo de (`salida.txt`):**
 ```
+
 DucKeyLogger ACTIVADO - 11/18/2025 16:57:46
 CAMBIO DE APLICACIÓN: Outlook - Bandeja de entrada -> Bloc de notas - notas.txt
 NUEVA VENTANA: Bloc de notas - notas.txt - notas.txt
