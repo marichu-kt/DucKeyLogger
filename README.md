@@ -37,7 +37,10 @@ El repositorio incluye materiales y guía visual para **demostrar** (de forma co
 
 Para compilar el script Ducky y generar tu propio archivo [`inject.bin`](inject.bin) para tu Rubber Ducky, utiliza nuestra utilidad de codificación local:
 
-[**🎯 Pincha aquí para abrir el Ducky Encoder**](Ducky%20Encoder.html)
+[**🎯 Pincha aquí para abrir el Ducky Encoder**](https://schlomo.github.io/rubber-ducky-german/)
+
+> [!NOTE]  
+> **Créditos:** El Ducky Encoder es propiedad de [schlomo/rubber-ducky-german](https://github.com/schlomo).
 
 Una vez abierto en tu navegador, sigue las instrucciones en la herramienta para codificar tu script y descargar el archivo `inject.bin` listo para usar en la microSD de tu Rubber Ducky.
 ## 🗂️ Exportar el chat a JSON (Telegram Desktop)
@@ -87,12 +90,10 @@ Una vez abierto en tu navegador, sigue las instrucciones en la herramienta para 
   </tr>
 </table>
 
-
 ## 🔎 Estructura del proyecto con todos sus archivos
 
 ```
 DucKeyLogger/
-├── 🧩 Ducky Encoder.html       # Utilidad local para codificar scripts Ducky (inject.bin)
 ├── ⚡ execute.bat              # Ejecutable en Windows manual (si no tenemos USB Rubber Ducky)
 ├── 🦆 inject.bin               # Payload compilado para la SD del USB Rubber Ducky
 ├── 🛡️ keylogger.ps1            # PoC educativa de registro de pulsaciones (keylogger)
@@ -112,7 +113,7 @@ DucKeyLogger/
 ```
 ```mermaid
 flowchart TD
-    A[DucKeyLogger] --> B[🧩 Ducky Encoder.html]
+    A[DucKeyLogger]
     A --> C[⚡ execute.bat]
     A --> D[🦆 inject.bin]
     A --> E[🛡️ keylogger.ps1]
@@ -194,4 +195,3 @@ Uso educativo. Verifica restricciones legales de este software en [LICENSE](LICE
 > [!IMPORTANT]  
 > **📢 Declaración Importante:**
 > El autor **no se hace responsable** del uso indebido, malintencionado o ilegal de este software. El uso de estas herramientas sin autorización explícita puede violar leyes locales e internacionales.
-
