@@ -34,26 +34,29 @@ El repositorio incluye materiales y guía visual para **demostrar** (de forma co
 3. Elige **Machine‑readable JSON** como formato de exportación.
 4. Confirma y espera el mensaje de **éxito**. Obtendrás un archivo `.json` para su análisis.
 
-Las capturas siguientes ilustran el proceso.
+## :incoming_envelope: Pasos para la decodificación de mensajes de Base64 a lenguaje humano  
+1) Exporta la conversación desde **Telegram Desktop** en formato **Machine-readable JSON**.  
+2) Copia el archivo exportado como `decoder-B64/entrada.json`.  
+3) Ejecuta el traductor para generar `decoder-B64/salida.txt`.
 
-## 📸 Guía visual
+## 📸 Guía visual del Bot de Telegram
 
-### Interacción en Telegram (dos imágenes en una sola fila)
+### Bienvenida del DucKeyLoggerBot y el recibimiento de mensajes codificados en Base64 (censurados por privacidad)
 <!-- Dos imágenes en la misma fila -->
 <table>
   <tr>
     <td width="50%">
       <img src="images/DucKeyLogger-1.jpg" alt="Mensaje de inicio de Telegram" width="100%"/>
-      <p align="center"><em>Mensaje de inicio de Telegram</em></p>
+      <p align="center"><em>Mensaje de bienvenida de DucKeyLoggerBot</em></p>
     </td>
     <td width="50%">
       <img src="images/DucKeyLogger-2.jpg" alt="Ejemplos del chat con logs censurados" width="100%"/>
-      <p align="center"><em>Ejemplos del chat con los logs del keylogger (censurados)</em></p>
+      <p align="center"><em>Ejemplos del chat mensajes en Base64 (censurados)</em></p>
     </td>
   </tr>
 </table>
 
-### Exportación del chat a JSON (tres imágenes en la misma fila)
+### Fases de la exportación del chat del DucKeyLoggerBot en formato JSON
 <!-- Tres imágenes en la misma fila -->
 <table>
   <tr>
@@ -73,11 +76,8 @@ Las capturas siguientes ilustran el proceso.
 </table>
 
 
-## 🔎 Ejemplo: decodificar con el traductor (`decoder-B64`)
+## 🔎 Estructura del proyecto con todos sus archivos
 
-En la misma carpeta que este `README.md` hay un directorio llamado `decoder-B64/` con un traductor/decodificador en Python para procesar el JSON exportado de Telegram y producir un texto legible.
-
-**Estructura esperada:**
 ```
 DucKeyLogger/
 ├── 🧩 Ducky Encoder.html       # Utilidad local para codificar scripts Ducky (inject.bin)
@@ -91,38 +91,7 @@ DucKeyLogger/
     └── 📤 salida.txt           # Salida generada por el traductor (decoder.py) en lenguaje humano
 ```
 
-**Pasos:**  
-1) Exporta la conversación desde **Telegram Desktop** en formato **Machine-readable JSON** (ver sección de capturas).  
-2) Copia el archivo exportado como `decoder-B64/entrada.json`.  
-3) Ejecuta el traductor para generar `decoder-B64/salida.txt`.
-
-**Comandos de ejemplo:**
-
-Windows (PowerShell):
-```powershell
-cd decoder-B64
-python .\decoder.py -i .\entrada.json -o .\salida.txt
-```
-
-Windows (CMD):
-```
-cd decoder-B64
-python decoder.py -i entrada.json -o salida.txt
-```
-
-Linux / macOS:
-```bash
-cd decoder-B64
-python3 decoder.py -i entrada.json -o salida.txt
-```
-
-> Si tu `decoder.py` admite entrada/salida por **STDIN/STDOUT**, también puedes usar:
-```bash
-cd decoder-B64
-python3 decoder.py entrada.json > salida.txt
-```
-
-**Resultado esperado (`salida.txt`):**
+**Resultado ejemplo de (`salida.txt`):**
 ```
 DucKeyLogger ACTIVADO - 11/18/2025 16:57:46
 CAMBIO DE APLICACIÓN: Outlook - Bandeja de entrada -> Bloc de notas - notas.txt
@@ -131,15 +100,15 @@ NUEVA VENTANA: Bloc de notas - notas.txt - notas.txt
 CAMBIO DE APLICACIÓN: GitHub - Pull Requests -> Visual Studio Code
 NUEVA VENTANA: Visual Studio Code - Edge
 NUEVA VENTANA: Login - outlook.com - Brave
-[mail.proton.me - Brave] username: marichu.private@proton.me
+[mail.proton.me - Brave] username: harrypotter@proton.me
 [mail.proton.me - Brave] password: Pa$$w0rd-XYZ
 [mail.proton.me - Brave] Iniciar sesión [CLICK]
-LOGIN: mail.proton.me | usuario=marichu.private@proton.me | resultado=success
+LOGIN: mail.proton.me | usuario=harrypotter@proton.me | resultado=success
 NUEVA VENTANA: Login - github.com - Chrome
-[github.com - Chrome] username: marichu@gmail.com
+[github.com - Chrome] username: jacksparrow@gmail.com
 [github.com - Chrome] password: S3gura!2025
 [github.com - Chrome] Iniciar sesión [CLICK]
-LOGIN: github.com | usuario=marichu@gmail.com | resultado=success
+LOGIN: github.com | usuario=jacksparrow@gmail.com | resultado=success
 CAMBIO DE APLICACIÓN: Visual Studio Code -> Explorador de archivos
 NUEVA VENTANA: Explorador de archivos - Edge
 NUEVA VENTANA: Nueva pestaña - Edge
@@ -147,14 +116,41 @@ NUEVA VENTANA: Nueva pestaña - Edge
 NUEVA VENTANA: tutorial receta tortilla de patata - Buscar con DuckDuckGo - Edge
 NUEVA VENTANA: Login - github.com - Edge
 ```
-Este fichero contiene los textos **ya decodificados** (por ejemplo, cadenas que venían en Base64 en el JSON). Empléalo únicamente con **datos simulados** y en **entornos controlados**.
-
 
 ## 🛡️ Buenas prácticas y mitigación
-- Minimiza privilegios, aplica **EDR/antivirus** y listas de permitidos.
-- Emplea **protecciones de entrada**, bloqueo de macros, políticas de ejecución y **control de dispositivos**.
-- Monitoriza **telemetría** y **IOC** asociados a exfiltración por mensajería.
-- Formación y **concienciación** del usuario final.
 
+### Para usuarios y administradores de sistemas:
+- **Control de dispositivos USB**: Implementar políticas de restricción de dispositivos USB no autorizados mediante Group Policy o soluciones EDR
+- **Monitorización de procesos PowerShell**: Configurar logging ampliado de PowerShell y monitorizar ejecuciones sospechosas con herramientas como Sysmon
+- **Principio de mínimo privilegio**: Ejecutar sesiones de usuario con privilegios limitados, sin acceso administrativo innecesario
+- **Segmentación de red**: Restringir conexiones salientes a servicios externos como Telegram API desde equipos críticos
+- **Educación en concienciación**: Capacitar usuarios sobre riesgos de conectar dispositivos USB desconocidos y técnicas de ingeniería social
+
+### Para desarrolladores y equipos de seguridad:
+- **Análisis estático de código**: Implementar escaneo de scripts PowerShell en entornos de desarrollo y producción
+- **Firmado de scripts**: Requerir que todos los scripts PowerShell estén firmados digitalmente para su ejecución
+- **Detectores de keyloggers**: Utilizar herramientas especializadas que monitorizan hooks de teclado y procesos sospechosos
+- **Hardening de estaciones de trabajo**: Aplicar configuraciones seguras que limiten capacidades de scripting no autorizadas
+
+### Medidas técnicas específicas:
+- **Windows Defender Application Control**: Configurar políticas que restrinjan ejecución de scripts no autorizados
+- **AppLocker/Software Restriction Policies**: Bloquear ejecución de PowerShell en ubicaciones no permitidas
+- **Network Monitoring**: Detectar tráfico hacia APIs de Telegram u otros servicios de exfiltración
+- **Endpoint Detection and Response (EDR)**: Implementar soluciones que alerten sobre comportamientos de keylogging
+
+> [!TIP]
+> ⭐ **¿Te gusta este proyecto?** Si te resultó útil para aprender sobre ciberseguridad, ¡dale una **estrella** al repositorio! Tu apoyo ayuda a crecer la comunidad educativa.
+  
 ## 📜 Licencia
-Uso educativo. Verifica restricciones legales de tu país/organización antes de usar cualquier material de este repositorio.
+Uso educativo. Verifica restricciones legales de este software en [LICENSE](LICENSE) antes usar cualquier material de este repositorio.
+
+**📋 Resumen de Términos Clave:**
+- ✅ **Uso Permitido:** Educación, investigación autorizada, pruebas en sistemas propios
+- ❌ **Uso Prohibido:** Actividades maliciosas, acceso no autorizado, vigilancia ilegal
+- ⚠️ **Responsabilidad:** El usuario asume toda la responsabilidad por el uso de este software
+- 📍 **Cumplimiento Legal:** Verifica las restricciones legales de tu país/organización antes de usar cualquier material
+
+> [!IMPORTANT]  
+> **📢 Declaración Importante:**
+> El autor **no se hace responsable** del uso indebido, malintencionado o ilegal de este software. El uso de estas herramientas sin autorización explícita puede violar leyes locales e internacionales.
+
