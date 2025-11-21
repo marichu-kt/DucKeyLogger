@@ -98,7 +98,7 @@ DucKeyLogger/
     ├── 📥 entrada.json         # Archivo JSON al exportar el chat del Bot de telegram
     └── 📤 salida.txt           # Salida generada por el traductor (decoder.py) en lenguaje humano
 ```
-```
+
 flowchart TD
     A[DucKeyLogger] --> B[🧩 Ducky Encoder.html]
     A --> C[⚡ execute.bat]
