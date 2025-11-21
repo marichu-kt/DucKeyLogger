@@ -245,6 +245,8 @@ DucKeyLogger/
 ├── 📜 LICENSE                  # Licenica de uso con sus terminos y condiciones del software
 ├── 📂 images/
 │   ├── banner.png
+│   ├── DucKeyLogger-Flow.png
+│   ├── DucKeyLogger-Flow.svg
 │   ├── DucKeyLogger-1.jpg
 │   ├── DucKeyLogger-2.jpg
 │   ├── TelegramDesktop-1.png
