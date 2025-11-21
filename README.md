@@ -41,7 +41,7 @@ El repositorio incluye materiales y guía visual para **demostrar** (de forma co
 
 ## 📸 Guía visual del Bot de Telegram
 
-### Bienvenida del DucKeyLoggerBot y el recibimiento de mensajes codificados en Base64 (censurados por privacidad)
+### Bienvenida del DucKeyLoggerBot y el recibimiento de mensajes codificados en Base64
 <!-- Dos imágenes en la misma fila -->
 <table>
   <tr>
