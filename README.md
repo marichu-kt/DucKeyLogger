@@ -18,6 +18,87 @@
 ## 🧭 Descripción del proyecto
 **DucKeyLogger** es una herramienta educativa de ciberseguridad que combina la capacidad de inyección USB del Rubber Ducky con un keylogger en PowerShell, capturando pulsaciones del teclado y enviándolas ofuscadas a un bot de Telegram para su posterior decodificación mediante scripts Python, sirviendo como demostración práctica de vectores de ataque y técnicas de exfiltración de datos en entornos controlados para fines educativos y de investigación en seguridad informática.
 
+```mermaid
+flowchart TD
+    A[🚀 INICIO DEL SISTEMA] --> B{¿Método de ejecución?}
+    
+    B -->|Automático| C[🦆 OPCIÓN RUBBER DUCKY]
+    B -->|Manual| D[⚡ OPCIÓN MANUAL]
+    
+    subgraph C [Ejecución con Rubber Ducky]
+        C1[📌 Insertar USB Rubber Ducky] --> C2[🔄 Dispositivo detectado como teclado HID]
+        C2 --> C3[📜 Ejecutar inject.bin desde microSD]
+        C3 --> C4[⌨️ Simular: WIN + R]
+        C4 --> C5[🔧 Ejecutar comando PowerShell oculto]
+    end
+    
+    subgraph D [Ejecución Manual]
+        D1[📁 Navegar a carpeta del proyecto] --> D2[🖱️ Doble clic en execute.bat]
+        D2 --> D3[⚡ Ejecutar script de inicialización]
+        D3 --> D4[🔧 Lanzar keylogger.ps1 oculto]
+    end
+    
+    C5 --> E[✅ KEYLOGGER INICIADO]
+    D4 --> E
+    
+    subgraph E [Proceso Principal Keylogger]
+        F[🕵️‍♂️ Ocultar todas las ventanas] --> G[⚙️ Inicializar configuración]
+        G --> H[📡 Conectar con Telegram Bot]
+        H --> I[🔍 Iniciar monitoreo de teclado]
+        
+        I --> J{Captura de teclas}
+        J -->|Tecla presionada| K[💾 Almacenar en buffer]
+        J -->|Sin tecla| L[⏰ Esperar 10ms]
+        
+        K --> M{¿Condición de envío?}
+        L --> J
+        
+        M -->|10+ caracteres| N[📨 ENVIAR DATOS]
+        M -->|60 segundos timeout| N
+        M -->|Cambio de ventana| N
+        M -->|Campo sensible detectado| N
+        M -->|No cumplido| J
+    end
+    
+    subgraph N [Proceso de Envío]
+        O[🔒 Comprimir con GZip] --> P[📊 Codificar en Base64]
+        P --> Q[📤 Enviar a Telegram API]
+        Q --> R[✅ Mensaje enviado]
+        R --> S[🔄 Limpiar buffer]
+    end
+    
+    S --> J
+    
+    T[🛑 DETENER KEYLOGGER] --> U{¿Método de detención?}
+    U -->|Administrador| V[💻 Abrir PowerShell como admin]
+    U -->|Usuario| W[📟 Abrir CMD normal]
+    U -->|Interfaz| X[🎯 Administrador de tareas]
+    
+    V --> Y[🔚 Ejecutar comando kill proceso]
+    W --> Y
+    X --> Y
+    
+    Y --> Z[✅ KEYLOGGER DETENIDO]
+    
+    subgraph AA [Proceso de Decodificación]
+        AB[📥 Exportar chat de Telegram] --> AC[🐍 Ejecutar decoder.py]
+        AC --> AD[📊 Procesar entrada.json]
+        AD --> AE[🔓 Decodificar Base64 + GZip]
+        AE --> AF[📝 Generar salida.txt]
+        AF --> AG[✅ Texto legible obtenido]
+    end
+    
+    %% Estilos para mejor visualización
+    style A fill:#2ecc71,color:white
+    style C fill:#3498db,color:white
+    style D fill:#3498db,color:white
+    style E fill:#9b59b6,color:white
+    style N fill:#e74c3c,color:white
+    style T fill:#f39c12,color:white
+    style Z fill:#95a5a6,color:white
+    style AA fill:#1abc9c,color:white
+```
+
 El repositorio incluye materiales y guía visual para **demostrar** (de forma controlada) cómo podrían aparecer registros de eventos en un canal de Telegram, así como el **proceso de exportación** de dichos mensajes para su análisis forense.
 
 > [!CAUTION]
@@ -173,26 +254,6 @@ DucKeyLogger/
     ├── 🐍 decoder.py           # Script de decodificación Base64
     ├── 📥 entrada.json         # Archivo JSON al exportar el chat del Bot de telegram
     └── 📤 salida.txt           # Salida generada por el traductor (decoder.py) en lenguaje humano
-```
-```mermaid
-flowchart TD
-    A[DucKeyLogger]
-    A --> C[⚡ execute.bat]
-    A --> D[🦆 inject.bin]
-    A --> E[🛡️ keylogger.ps1]
-    A --> F[📝 README.md]
-    A --> G[📜 LICENSE]
-    A --> H[📂 images]
-    A --> I[📂 decoder-B64]
-    H --> H1[banner.png]
-    H --> H2[DucKeyLogger-1.jpg]
-    H --> H3[DucKeyLogger-2.jpg]
-    H --> H4[TelegramDesktop-1.png]
-    H --> H5[TelegramDesktop-2.png]
-    H --> H6[TelegramDesktop-3.png]
-    I --> I1[🐍 decoder.py]
-    I --> I2[📥 entrada.json]
-    I --> I3[📤 salida.txt]
 ```
 
 **Resultado ejemplo de (`salida.txt`):**
