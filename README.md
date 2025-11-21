@@ -33,6 +33,13 @@ El repositorio incluye materiales y guía visual para **demostrar** (de forma co
 - **Telegram Desktop** para exportar el chat.
 - Un **USB Rubber Ducky**, por ejemplo el de Hack5 (se puede ejecutar manualmente, usando execute.bat).
 
+## 🧩 Generación de Payload
+
+Para compilar el script Ducky y generar tu propio archivo [`inject.bin`](inject.bin) para tu Rubber Ducky, utiliza nuestra utilidad de codificación local:
+
+[**🎯 Pincha aquí para abrir el Ducky Encoder**](Ducky%20Encoder.html)
+
+Una vez abierto en tu navegador, sigue las instrucciones en la herramienta para codificar tu script y descargar el archivo `inject.bin` listo para usar en la microSD de tu Rubber Ducky.
 ## 🗂️ Exportar el chat a JSON (Telegram Desktop)
 1. Abre Telegram Desktop y entra en el chat del bot.
 2. Abre el menú **⋯** → **Export chat history** / **Exportar historial del chat**.
