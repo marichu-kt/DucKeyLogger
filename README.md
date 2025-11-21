@@ -1,4 +1,4 @@
-# DucKeyLogger — Herramienta Educativa de Ciberseguridad
+# DucKeyLogger — Keylogger usando un USB Rubber Ducky de Hack5 - Herramienta Educativa de Ciberseguridad
 
 > **Aviso**: Este proyecto está diseñado **exclusivamente** para fines educativos y de concienciación en ciberseguridad, en **entornos controlados** y con **permiso explícito** de todas las partes. **No** está pensado para uso malicioso ni para monitorizar sistemas ajenos.
 
@@ -89,12 +89,16 @@ En la misma carpeta que este `README.md` hay un directorio llamado `decoder-B64/
 
 **Estructura esperada:**
 ```
-.
-├─ README.md
-└─ decoder-B64/
-   ├─ decoder.py
-   ├─ entrada.json     # exportación de Telegram (Machine-readable JSON)
-   └─ salida.txt       # se genera tras ejecutar el script
+DucKeyLogger/
+├── 🧩 Ducky Encoder.html       # Utilidad local para codificar scripts Ducky
+├── ⚡ execute.bat              # Lanzador/automatización en Windows
+├── 🦆 inject.bin               # Payload compilado (Rubber Ducky)
+├── 🛡️ keylogger.ps1           # PoC educativa de registro de pulsaciones
+├── 📝 README.md                # Descripción y notas del proyecto
+└── 📂 decoder-B64/             # Utilidades de decodificación Base64
+    ├── 🐍 decoder.py           # Script de decodificación
+    ├── 📥 entrada.json         # Ejemplo de entrada
+    └── 📤 salida.txt           # Salida generada
 ```
 
 **Pasos:**  
