@@ -90,15 +90,15 @@ En la misma carpeta que este `README.md` hay un directorio llamado `decoder-B64/
 **Estructura esperada:**
 ```
 DucKeyLogger/
-├── 🧩 Ducky Encoder.html       # Utilidad local para codificar scripts Ducky
-├── ⚡ execute.bat              # Lanzador/automatización en Windows
-├── 🦆 inject.bin               # Payload compilado (Rubber Ducky)
-├── 🛡️ keylogger.ps1           # PoC educativa de registro de pulsaciones
+├── 🧩 Ducky Encoder.html       # Utilidad local para codificar scripts Ducky (inject.bin)
+├── ⚡ execute.bat              # Lanzador/automatización en Windows manual (si no tenemos USB Rubber Ducky)
+├── 🦆 inject.bin               # Payload compilado para la SD del USB Rubber Ducky
+├── 🛡️ keylogger.ps1            # PoC educativa de registro de pulsaciones (keylogger)
 ├── 📝 README.md                # Descripción y notas del proyecto
-└── 📂 decoder-B64/             # Utilidades de decodificación Base64
-    ├── 🐍 decoder.py           # Script de decodificación
-    ├── 📥 entrada.json         # Ejemplo de entrada
-    └── 📤 salida.txt           # Salida generada
+└── 📂 decoder-B64/             # Traductor de Base64 a texto humano legible
+    ├── 🐍 decoder.py           # Script de decodificación Base64
+    ├── 📥 entrada.json         # Archivo JSON al exportar el chat del Bot de telegram
+    └── 📤 salida.txt           # Salida generada por el traductor (decoder.py) en lenguaje humano
 ```
 
 **Pasos:**  
