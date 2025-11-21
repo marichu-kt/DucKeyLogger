@@ -23,15 +23,68 @@ El repositorio incluye materiales y guía visual para **demostrar** (de forma co
 > [!CAUTION]
 > Como autor de este proyecto **no me hago responsable** de cualquier uso indebido, ilegal o malintencionado que se haga del mismo.
 
-## 🎯 Objetivos educativos
-- Concienciar sobre los riesgos de registrar entradas de teclado y su envío a terceros.
-- Explicar un **flujo de trabajo de auditoría**: desde la aparición de mensajes en Telegram hasta su **exportación** a **JSON** para su análisis.
-- Reforzar **buenas prácticas defensivas** y controles de seguridad.
-
 ## 🔧 Requisitos mínimos (entorno de laboratorio seguro)
 - Cuenta de Telegram y un bot creado con **@BotFather**.
 - **Telegram Desktop** para exportar el chat.
 - Un **USB Rubber Ducky**, por ejemplo el de Hack5 (se puede ejecutar manualmente, usando execute.bat).
+
+## 🔑 Keylogger Stealth - Configuración y Uso
+
+### 🎯 Características del Keylogger
+
+El script [`keylogger.ps1`](keylogger.ps1) incluye funcionalidades avanzadas para captura de entrada:
+
+- **🕵️ Modo Stealth**: Ventana oculta automáticamente al ejecutar
+- **⌨️ Captura Completa**: Soporte para teclado español
+- **🔒 Ofuscación Avanzada**: Comprime y codifica en Base64 + GZip
+- **📱 Integración Telegram**: Envío automático a tu bot configurado
+- **🎯 Detección Inteligente**: Identifica campos sensibles y cambios de ventana
+
+### ⚙️ Configuración Rápida
+
+1. **Configura tus credenciales** en el script:
+```keylogger.ps1
+$token = "TU_BOT_TOKEN_AQUI"
+$chatId = "TU_CHAT_ID_AQUI"
+```
+## 🤖 Configuración de Telegram Bot
+
+### Obtén tu Token de Telegram:
+
+1. **Busca** `@BotFather` en Telegram  
+2. **Ejecuta** el comando `/newbot` y sigue las instrucciones  
+3. **Copia** el token proporcionado (formato: `1234567890:ABCdefGHIjklMNOpqrsTUVwxyz`)
+
+### Obtén tu Chat ID:
+1. **Envía un mensaje** a tu bot recién creado  
+2. **Visita** esta URL en tu navegador:  
+   `https://api.telegram.org/bot<TU_TOKEN>/getUpdates`
+3. **Encuentra** el `chat.id` en la respuesta JSON:
+
+```json
+{
+  "ok": true,
+  "result": [{
+    "update_id": 123456789,
+    "message": {
+      "message_id": 1,
+      "from": {
+        "id": 987654321,  // ← Este es tu Chat ID
+        "first_name": "TuNombre",
+        "username": "TuUsuario"
+      },
+      "chat": {
+        "id": 987654321,  // ← Este es tu Chat ID
+        "first_name": "TuNombre",
+        "username": "TuUsuario",
+        "type": "private"
+      },
+      "date": 1690000000,
+      "text": "Hola bot"
+    }
+  }]
+}
+```
 
 ## 🧩 Generación de Payload
 > [!NOTE]  
