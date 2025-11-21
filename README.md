@@ -186,7 +186,6 @@ flowchart TD
 
 **Resultado ejemplo de (`salida.txt`):**
 ```
-
 DucKeyLogger ACTIVADO - 11/18/2025 16:57:46
 CAMBIO DE APLICACIÓN: Outlook - Bandeja de entrada -> Bloc de notas - notas.txt
 NUEVA VENTANA: Bloc de notas - notas.txt - notas.txt
