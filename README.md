@@ -40,7 +40,7 @@ Para compilar el script Ducky y generar tu propio archivo [`inject.bin`](inject.
 [**🎯 Pincha aquí para abrir el Ducky Encoder**](https://schlomo.github.io/rubber-ducky-german/)
 
 > [!NOTE]  
-> **Créditos:** El Ducky Encoder es propiedad de [schlomo/rubber-ducky-german](https://github.com/schlomo).
+> **Créditos:** El Ducky Encoder es propiedad de [@schlomo](https://github.com/schlomo).
 
 Una vez abierto en tu navegador, sigue las instrucciones en la herramienta para codificar tu script y descargar el archivo `inject.bin` listo para usar en la microSD de tu Rubber Ducky.
 ## 🗂️ Exportar el chat a JSON (Telegram Desktop)
