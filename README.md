@@ -3,7 +3,7 @@
 > [!WARNING]  
 > **Aviso legal y ético**: Este proyecto está diseñado **exclusivamente** para fines educativos, de auditoría y de concienciación en ciberseguridad, en **entornos controlados**, de **laboratorio** y siempre con el **permiso explícito, previo y documentado** de todas las partes implicadas.  
 >  
-> El uso de keyloggers o técnicas similares en sistemas de terceros **sin autorización** puede constituir un **delito** (por ejemplo, acceso ilícito, descubrimiento y revelación de secretos, violación de la privacidad o de la confidencialidad de las comunicaciones), sancionable administrativa y/o penalmente según la legislación vigente en tu país.  
+> El uso de keyloggers o técnicas similares en sistemas de terceros **sin autorización** puede constituir un **delito**, sancionable administrativa y/o penalmente según la legislación vigente en tu país.  
 >  
 > Al utilizar este material te comprometes a:  
 > - Emplearlo **solo** en equipos y cuentas **propias** o en aquellos para los que dispongas de un **consentimiento explícito por escrito**.  
@@ -12,8 +12,7 @@
 
 
 > [!CAUTION]
-> El autor de este proyecto **no se hace responsable** de cualquier uso indebido, ilegal o malintencionado que se haga del mismo. El objetivo es **aprender a defenderse** de este tipo de ataques, no facilitarlos.
-
+> Como autor de este proyecto **no me hago responsable** de cualquier uso indebido, ilegal o malintencionado que se haga del mismo.
 
 
 
