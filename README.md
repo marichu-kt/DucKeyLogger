@@ -1,4 +1,4 @@
-# DucKeyLogger — Keylogger usando un USB Rubber Ducky de Hack5 - Herramienta Educativa de Ciberseguridad
+# :duck: DucKeyLogger — Keylogger usando un USB Rubber Ducky de Hack5 :keyboard: - Herramienta Educativa de Ciberseguridad :mortar_board::shield:
 
 > **Aviso**: Este proyecto está diseñado **exclusivamente** para fines educativos y de concienciación en ciberseguridad, en **entornos controlados** y con **permiso explícito** de todas las partes. **No** está pensado para uso malicioso ni para monitorizar sistemas ajenos.
 
