@@ -98,7 +98,7 @@ DucKeyLogger/
     ├── 📥 entrada.json         # Archivo JSON al exportar el chat del Bot de telegram
     └── 📤 salida.txt           # Salida generada por el traductor (decoder.py) en lenguaje humano
 ```
-
+```mermaid
 flowchart TD
     A[DucKeyLogger] --> B[🧩 Ducky Encoder.html]
     A --> C[⚡ execute.bat]
@@ -117,6 +117,7 @@ flowchart TD
     I --> I1[🐍 decoder.py]
     I --> I2[📥 entrada.json]
     I --> I3[📤 salida.txt]
+```
 
 **Resultado ejemplo de (`salida.txt`):**
 ```
