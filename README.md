@@ -1,6 +1,24 @@
 # :duck: DucKeyLogger — Keylogger usando un USB Rubber Ducky de Hack5 :keyboard: - Herramienta Educativa de Ciberseguridad :mortar_board::shield:
 
-> **Aviso**: Este proyecto está diseñado **exclusivamente** para fines educativos y de concienciación en ciberseguridad, en **entornos controlados** y con **permiso explícito** de todas las partes. **No** está pensado para uso malicioso ni para monitorizar sistemas ajenos.
+> [!WARNING]  
+> **Aviso legal y ético**: Este proyecto está diseñado **exclusivamente** para fines educativos, de auditoría y de concienciación en ciberseguridad, en **entornos controlados**, de **laboratorio** y siempre con el **permiso explícito, previo y documentado** de todas las partes implicadas.  
+>  
+> El uso de keyloggers o técnicas similares en sistemas de terceros **sin autorización** puede constituir un **delito** (por ejemplo, acceso ilícito, descubrimiento y revelación de secretos, violación de la privacidad o de la confidencialidad de las comunicaciones), sancionable administrativa y/o penalmente según la legislación vigente en tu país.  
+>  
+> Al utilizar este material te comprometes a:  
+> - Emplearlo **solo** en equipos y cuentas **propias** o en aquellos para los que dispongas de un **consentimiento explícito por escrito**.  
+> - No utilizarlo para **espiar**, **robar credenciales**, **suplantar identidades** o causar cualquier tipo de **daño**.  
+> - Respetar siempre las **leyes**, los **códigos de conducta profesionales** y los **principios éticos** de la ciberseguridad (responsible disclosure, mínima intrusión, protección de la privacidad, etc.).  
+
+
+> [!CAUTION]
+> El autor de este proyecto **no se hace responsable** de cualquier uso indebido, ilegal o malintencionado que se haga del mismo. El objetivo es **aprender a defenderse** de este tipo de ataques, no facilitarlos.
+
+
+
+
+
+
 
 ## 🧭 Descripción del proyecto
 **DucKeyLogger** es un proyecto didáctico que muestra **riesgos** y **vectores de ataque** asociados a la captura de pulsaciones y a la **exfiltración de datos** hacia un canal de mensajería (por ejemplo, un bot de Telegram). El objetivo es **aprender a detectar**, **mitigar** y **auditar** este tipo de amenazas.
