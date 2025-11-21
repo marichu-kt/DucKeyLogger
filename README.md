@@ -1,5 +1,10 @@
 # :duck: DucKeyLogger — Keylogger usando un USB Rubber Ducky de Hack5 :keyboard: - Herramienta Educativa de Ciberseguridad :mortar_board::shield:
 
+> [!IMPORTANT]
+> **Lea cuidadosamente toda la documentación del repositorio, incluyendo la [LICENCIA](LICENSE) y [README](README.md), para evitar el incumplimiento de normativas legales y éticas, ya que el uso no autorizado de esta herramienta puede violar leyes locales e internacionales de ciberseguridad.**
+
+![Banner DucKeyLogger](images/banner.png)
+
 > [!WARNING]  
 > **Aviso legal y ético**: Este proyecto está diseñado **exclusivamente** para fines educativos, de auditoría y de concienciación en ciberseguridad, en **entornos controlados**, de **laboratorio** y siempre con el **permiso explícito, previo y documentado** de todas las partes implicadas.  
 >  
@@ -81,7 +86,7 @@ El repositorio incluye materiales y guía visual para **demostrar** (de forma co
 ```
 DucKeyLogger/
 ├── 🧩 Ducky Encoder.html       # Utilidad local para codificar scripts Ducky (inject.bin)
-├── ⚡ execute.bat              # Lanzador/automatización en Windows manual (si no tenemos USB Rubber Ducky)
+├── ⚡ execute.bat              # Ejecutable en Windows manual (si no tenemos USB Rubber Ducky)
 ├── 🦆 inject.bin               # Payload compilado para la SD del USB Rubber Ducky
 ├── 🛡️ keylogger.ps1            # PoC educativa de registro de pulsaciones (keylogger)
 ├── 📝 README.md                # Descripción y notas del proyecto
