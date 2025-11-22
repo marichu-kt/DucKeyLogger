@@ -317,6 +317,6 @@ Uso educativo. Verifica restricciones legales de este software en [LICENSE](LICE
 - ⚠️ **Responsabilidad:** El usuario asume toda la responsabilidad por el uso de este software
 - 📍 **Cumplimiento Legal:** Verifica las restricciones legales de tu país/organización antes de usar cualquier material
 
-> [!IMPORTANT]  
+> [!NOTE]  
 > **📢 Declaración Importante:**
 > El autor **no se hace responsable** del uso indebido, malintencionado o ilegal de este software. El uso de estas herramientas sin autorización explícita puede violar leyes locales e internacionales.
