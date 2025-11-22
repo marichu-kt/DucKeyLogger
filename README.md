@@ -315,7 +315,7 @@ Uso educativo. Verifica restricciones legales de este software en [LICENSE](LICE
 - ✅ **Uso Permitido:** Educación, investigación autorizada, pruebas en sistemas propios
 - ❌ **Uso Prohibido:** Actividades maliciosas, acceso no autorizado, vigilancia ilegal
 - ⚠️ **Responsabilidad:** El usuario asume toda la responsabilidad por el uso de este software
-- 📍 **Cumplimiento Legal:** Verifica las restricciones legales de tu país/organización antes de usar cualquier material
+- 📍 **Cumplimiento Legal:** Verifica las restricciones legales antes de usar cualquier material
 
 > [!NOTE]  
 > **📢 Declaración Importante:**
