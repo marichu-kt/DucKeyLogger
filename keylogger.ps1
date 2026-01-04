@@ -4,20 +4,20 @@
 # ██─██─██─██─██─███▀██─▄▀███─▄█▀██▄─▄███─██▀█─██─█─██▄─█─██▄─██─▄█▀██─▄─▄█
 # █▄▄▄▄███▄▄▄▄██▄▄▄▄▄█▄▄█▄▄█▄▄▄▄▄██▄▄▄██▄▄▄▄▄█▄▄▄▄█▄▄▄▄▄█▄▄▄▄▄█▄▄▄▄▄█▄▄█▄▄█
 
-# ============================================================================================================ #
-# Este software, denominado DucKeyLogger, es propiedad de @marichu_kt.                                         #
-# Forma parte del proyecto: https://github.com/marichu-kt/DucKeyLogger                                         #
-#                                                                                                              #
-# Se proporciona única y exclusivamente con fines educativos y de investigación en seguridad.                  #
-# Como autor no me hago responsable del uso indebido, daños o perjuicios derivados de este código.             #
-#                                                                                                              #
-# El uso de herramientas de registro de teclas (keyloggers) en sistemas o cuentas ajenas,                      #
-# sin el consentimiento expreso y por escrito de su propietario, puede vulnerar la legislación                 #
-# vigente en materia de protección de datos y delitos informáticos (por ejemplo, normativa                     #
-# de protección de datos y el Código Penal del país correspondiente).                                          #
-#                                                                                                              #
-# Úsalo únicamente en entornos de prueba y siempre con autorización previa y explícita.                        #
-# ============================================================================================================ #
+# ====================================================================================================== #
+#    Este software, denominado DucKeyLogger, es propiedad de @marichu_kt.                                #
+#    Forma parte del proyecto: https://github.com/marichu-kt/DucKeyLogger                                #
+#                                                                                                        #
+#    Se proporciona única y exclusivamente con fines educativos y de investigación en seguridad.         #
+#    Como autor no me hago responsable del uso indebido, daños o perjuicios derivados de este código.    #
+#                                                                                                        #
+#    El uso de herramientas de registro de teclas (keyloggers) en sistemas o cuentas ajenas,             #
+#    sin el consentimiento expreso y por escrito de su propietario, puede vulnerar la legislación        #
+#    vigente en materia de protección de datos y delitos informáticos (por ejemplo, normativa            #
+#    de protección de datos y el Código Penal del país correspondiente).                                 #
+#                                                                                                        #
+#    Úsalo únicamente en entornos de prueba y siempre con autorización previa y explícita.               #
+# ====================================================================================================== #
 
 Add-Type -TypeDefinition @"
 using System;
