@@ -319,4 +319,4 @@ Uso educativo. Verifica restricciones legales de este software en [LICENSE](LICE
 
 > [!NOTE]  
 > **📢 Declaración Importante:**
-> El autor **no se hace responsable** del uso indebido, malintencionado o ilegal de este software. El uso de estas herramientas sin autorización explícita puede violar leyes locales e internacionales.
+> Como autor **no me hago responsable** del uso indebido, malintencionado o ilegal de este software. El uso de estas herramientas sin autorización explícita puede violar leyes locales e internacionales.
